@@ -7,6 +7,7 @@ object APP {
 
     println("Welcome to CLI, type \"help\" for command list:")
     while (true) {
+      val privKey = Wallet.Default.getPrivKey()
       val account = RPC.post("showaccount", s"""{"address":"${privKey.publicKey.address}"}""")
       var nextNonce: Long = 0
       if (account != JsNull) {
