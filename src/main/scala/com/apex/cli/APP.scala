@@ -7,15 +7,7 @@ object APP {
 
     println("Welcome to CLI, type \"help\" for command list:")
     while (true) {
-      Command.execute(Console.in.readLine()) match {
-        case UnKnown(cmd) => println(s"unknown command: $cmd")
-        case InvalidParams(input) => println(s"invalid parameters: $input")
-        case Success(result) => Command.execute(Console.in.readLine())
-        case Help(message) => println(message)
-        case Error(e) => println(e)
-        case NoInput() => {}
-        case Quit() => sys.exit()
-      }
+      Command.execute("send -to AP9x3wKTf6GsdbuHa47MmTXdBvv54sAErkx -amount 1")
       Thread.sleep(5000)
     }
   }
