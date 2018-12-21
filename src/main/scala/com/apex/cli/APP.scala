@@ -10,12 +10,13 @@ object APP {
       Command.execute(Console.in.readLine()) match {
         case UnKnown(cmd) => println(s"unknown command: $cmd")
         case InvalidParams(input) => println(s"invalid parameters: $input")
-        case Success(result) => println(result)
+        case Success(result) => Command.execute(Console.in.readLine())
         case Help(message) => println(message)
         case Error(e) => println(e)
         case NoInput() => {}
         case Quit() => sys.exit()
       }
+      Thread.sleep(5000)
     }
   }
 }
