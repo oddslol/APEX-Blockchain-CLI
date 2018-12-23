@@ -20,7 +20,7 @@ object APP {
       Command.execute("sendrawtransaction -privkey 8d3d3ff1ebf1141000e9d844a3920a3bd4377f9bc5a4151b6eb30367785658ea -address AP9x3wKTf6GsdbuHa47MmTXdBvv54sAErkx -assetId 0000000000000000000000000000000000000000000000000000000000000000 -amount 0.001 -nonce "+nonce2.toString)
       Command.execute("sendrawtransaction -privkey 8d3d3ff1ebf1141000e9d844a3920a3bd4377f9bc5a4151b6eb30367785658ea -address AP9x3wKTf6GsdbuHa47MmTXdBvv54sAErkx -assetId 0000000000000000000000000000000000000000000000000000000000000000 -amount 0.001 -nonce "+nonce3.toString)
       Command.execute("sendrawtransaction -privkey 8d3d3ff1ebf1141000e9d844a3920a3bd4377f9bc5a4151b6eb30367785658ea -address AP9x3wKTf6GsdbuHa47MmTXdBvv54sAErkx -assetId 0000000000000000000000000000000000000000000000000000000000000000 -amount 0.001 -nonce "+nonce4.toString)
-      Thread.sleep(100)
+      Thread.sleep(5000)
     }
   }
 }
